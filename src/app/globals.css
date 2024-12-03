@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+    :root {
+        --background: #f4f8fb; /* Nền chính */
+        --foreground: #1a1a1a; /* Văn bản chính */
+        --card: #ffffff; /* Nền thẻ */
+        --card-foreground: #1a1a1a; /* Văn bản trong thẻ */
+        --popover: #ffffff; /* Nền hộp thoại */
+        --popover-foreground: #1a1a1a; /* Văn bản hộp thoại */
+        --primary: #ff3b3b; /* Màu chính (CTA, điểm nhấn) */
+        --primary-foreground: #ffffff; /* Văn bản trên nền primary */
+        --secondary: #ffeb1e; /* Nền phụ */
+        --secondary-foreground: #664700; /* Văn bản trên nền phụ */
+        --muted: #f0f4f8; /* Nền mờ */
+        --muted-foreground: #808080; /* Văn bản trên nền mờ */
+        --accent: #e3e3e3; /* Điểm nhấn (nhẹ nhàng hơn primary) */
+        --accent-foreground: #1a1a1a; /* Văn bản trên nền accent */
+        --destructive: #ff6666; /* Màu cảnh báo (xóa, lỗi) */
+        --destructive-foreground: #ffffff; /* Văn bản trên nền destructive */
+        --border: #e3e9ee; /* Viền */
+        --input: #e3e9ee; /* Input */
+        --ring: #ff5035; /* Viền tương tác */
+        --chart-1: #80a4ff; /* Biểu đồ 1 */
+        --chart-2: #ffad33; /* Biểu đồ 2 */
+        --chart-3: #5fbf73; /* Biểu đồ 3 */
+        --chart-4: #d966ff; /* Biểu đồ 4 */
+        --chart-5: #ffdd8e; /* Biểu đồ 5 */
+        --radius: 0.375rem; /* Bo góc */
+    }
+
+    .dark {
+        /* Dark Mode */
+        --background: #141a1f; /* Nền chính */
+        --foreground: #f9fafb; /* Văn bản chính */
+        --card: #1d242b; /* Nền thẻ */
+        --card-foreground: #f9fafb; /* Văn bản trong thẻ */
+        --popover: #1d242b; /* Nền hộp thoại */
+        --popover-foreground: #f9fafb; /* Văn bản hộp thoại */
+        --primary: #dd3121; /* Màu chính (CTA, điểm nhấn) */
+        --primary-foreground: #ffffff; /* Văn bản trên nền primary */
+        --secondary: #eab412; /* Nền phụ */
+        --secondary-foreground: #ffecb3; /* Văn bản trên nền phụ */
+        --muted: #2e3138; /* Nền mờ */
+        --muted-foreground: #b3bfcc; /* Văn bản trên nền mờ */
+        --accent: #fcc12d; /* Điểm nhấn (nhẹ nhàng hơn primary) */
+        --accent-foreground: #f9fafb; /* Văn bản trên nền accent */
+        --destructive: #eb4747; /* Màu cảnh báo (xóa, lỗi) */
+        --destructive-foreground: #ffffff; /* Văn bản trên nền destructive */
+        --border: #2e3338; /* Viền */
+        --input: #2e3338; /* Input */
+        --ring: #f25f3a; /* Viền tương tác */
+        --chart-1: #57afdb; /* Biểu đồ 1 */
+        --chart-2: #e88c30; /* Biểu đồ 2 */
+        --chart-3: #22c322; /* Biểu đồ 3 */
+        --chart-4: #e9638f; /* Biểu đồ 4 */
+        --chart-5: #eebd2b; /* Biểu đồ 5 */
+        --radius: 0.375rem; /* Bo góc */
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
