@@ -1,11 +1,13 @@
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export default function Home() {
+    const t = useTranslations('HomePage');
     return (
         <>
             <div className="px-16 py-6 bg-primary">
                 <h1 className="text-3xl font-bold text-center text-primary-foreground">
-                    Burger Express
+                    Burger Express {t('title')}
                 </h1>
             </div>
             <Link href={'/color'}>Click here for Color Document</Link>
