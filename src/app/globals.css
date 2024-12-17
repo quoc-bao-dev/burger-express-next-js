@@ -72,4 +72,8 @@ body {
     body {
         @apply bg-background text-foreground;
     }
+
+    .animate-1 {
+        @apply transition duration-300;
+    }
 }

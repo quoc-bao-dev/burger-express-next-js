@@ -1,5 +1,8 @@
-import Link from 'next/link';
+import Container from '@/components/layout/Container';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+
+const Box = () => <div className="h-20 w-20 bg-primary"></div>;
 
 export default function Home() {
     const t = useTranslations('HomePage');
@@ -25,6 +28,23 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
+            <h1>Home Page</h1>
+            <article>
+                <header>
+                    <h2>Burger beef</h2>
+                </header>
+                <div>
+                    <p>The good food</p>
+                </div>
+                <footer>
+                    <button>Add to cart</button>
+                </footer>
+            </article>
+
+            <Container>
+                <Box />
+            </Container>
         </>
     );
 }
